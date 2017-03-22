@@ -20,8 +20,9 @@ public class IncreaseDrivetrainSpeed extends Command {
     }
 
     protected void initialize() {
-    	Robot.drivetrain.stop();
     	Robot.drivetrain.increaseSpeed();
+    	Robot.drivetrain.stop();
+    	Robot.drivetrain.updateSpeedSmardDashboard();
     }
 
     protected void execute() {

@@ -25,7 +25,7 @@ public class Drivetrain extends Subsystem {
 
     private final RobotDrive robotDrive = RobotMap.robotDrive;
 
-    public double speed = 0.0;
+    public double speed = 0.25;
 
     public void initDefaultCommand() {
         setDefaultCommand(new StopDrivetrain());
@@ -41,7 +41,7 @@ public class Drivetrain extends Subsystem {
     	robotDrive.stopMotor();
     }
     public void increaseSpeed() {
-    	if (speed >= 0.95) {
+    	if (speed <= 0.95) {
 			speed = speed + 0.05;
 		} else {
 			speed = 1.0;
@@ -49,7 +49,7 @@ public class Drivetrain extends Subsystem {
     }
     
     public void decreaseSpeed() {
-    	if (speed <= 0.05) {
+    	if (speed >= 0.05) {
     		speed = speed - 0.05;
     	}
     	else {

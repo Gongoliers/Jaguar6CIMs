@@ -23,7 +23,6 @@ public class DriveForwards extends Command {
     }
 
     protected void initialize() {
-    	Robot.drivetrain.stop();
     }
 
     protected void execute() {

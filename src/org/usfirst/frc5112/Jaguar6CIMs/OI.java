@@ -37,8 +37,8 @@ public class OI {
 
         joystick = new Joystick(0);
         
-        joystickButton6 = new JoystickButton(joystick, 6);
-        joystickButton6.whileHeld(new DecreaseDirvetrainSpeed());
+//        joystickButton6 = new JoystickButton(joystick, 6);
+//        joystickButton6.whileHeld(new DecreaseDirvetrainSpeed());
         joystickButton5 = new JoystickButton(joystick, 5);
         joystickButton5.whileHeld(new IncreaseDrivetrainSpeed());
         joystickButton4 = new JoystickButton(joystick, 4);
